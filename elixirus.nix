@@ -6,9 +6,25 @@
   virtualisation.oci-containers.containers.elixirus = {
     image = "ghcr.io/rustysnek/elixirus:latest";
     ports = ["4000:4000"];
+    extraOptions=[
+    # "--network=container:protonwire" # Looks like librus blocks popular VPNs xdddd
+    ];
     environmentFiles = ["/run/keys/elixirus.env.secret"];
   };
 
+# virtualisation.oci-containers.containers.protonwire = {
+#   image ="ghcr.io/tprasadtp/protonwire:7";
+#   ports = ["4000:4000"];
+#   extraOptions=[
+#   "--cap-add=NET_ADMIN"
+#   "--sysctl=net.ipv4.conf.all.rp_filter=2"
+#   "--sysctl=net.ipv6.conf.all.disable_ipv6=1"
+#   ];
+#   environmentFiles = ["/run/keys/private-key"];
+#   environment = {
+#     PROTONVPN_SERVER = "185.107.56.117"; 
+#   };
+# };
   systemd.timers."elixirus-update" = {
     wantedBy = ["timers.target"];
     timerConfig = {

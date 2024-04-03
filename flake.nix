@@ -23,6 +23,9 @@
         deployment.keys."elixirus.env.secret" = {
           keyCommand = ["pass" "elixirus/elixirus.env"];
         };
+       #deployment.keys."private-key" = {
+       #  keyCommand = ["pass" "elixirus/protonwire"];
+       #};
 
         virtualisation.oci-containers.backend = "podman";
         networking.firewall.allowedTCPPorts = [80 443];

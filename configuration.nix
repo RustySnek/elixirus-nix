@@ -44,6 +44,7 @@
 
   users.users."root".openssh.authorizedKeys.keys = [
     "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDa9pvV1c7pT3D9ylcJ/5aMID8Ksxe4MDLDBhwnXvtOv1OY28tBUHq7wCdA9iw+iH07mn5F9u09QxFZxp8PPOrMhOeL/2EAppfrSFgulh/qKMyy7AwHwTvlEXGJcy/95IIJbDfkd+r/ZOh3gd1qbI6414xwKZ5jRLnSWVdKut52VkpVixG5BsmHWMwNOX0HiGarhYXP1kcFx4khzx1OqO52gT/8or7rz5G2IXebDYiBcOxsBJdLyGO4HZcgopriT63wuOj3exGo6QjtvUgQc39/3zIBlyYDMRClw5OTE5WLlL4R30U9D7VKY5+xSiLGObfTrYDgNnuhc/WT/JBPlonHa+dFvct5n/iqWzJho3ToFHdNFAh4OalZlj2eNAgQbgvrBGUIdwHI/Uyx/FPJCACIcEY9t+UpV2YUIidG9E9syZyWNkvU77wb28P4+NYaUllYn4M3qryNPbTXlFKCd2yCrQHMPvR6mmNx0lj6+NS6zfhThIfWOI967ZKQMtrn2Pc= q@stein"
+    "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDpA8T6Rr1lbEiHGkfA6b+Oq1b+Dp9x4qR+30G2jwcmr rustysnek@chunchumaru"
  ];
  users.users."elixirus_tunnel" = {
 isNormalUser = true;

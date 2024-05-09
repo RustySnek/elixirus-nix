@@ -7,6 +7,7 @@
     image = "ghcr.io/rustysnek/elixirus:latest";
     ports = ["4000:4000"];
     extraOptions=[
+    "--network=host"
     # "--network=container:protonwire" # Looks like librus blocks popular VPNs xdddd
     ];
     environmentFiles = ["/run/keys/elixirus.env.secret"];

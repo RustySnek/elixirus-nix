@@ -23,6 +23,9 @@
         deployment.keys."elixirus.env.secret" = {
           keyCommand = ["pass" "elixirus/elixirus.env"];
         };
+        deployment.keys."service-account.env" = {
+          keyCommand = ["pass" "elixirus/service-account"];
+        };
        #deployment.keys."private-key" = {
        #  keyCommand = ["pass" "elixirus/protonwire"];
        #};

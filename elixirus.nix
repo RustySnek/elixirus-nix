@@ -11,7 +11,7 @@
     # "--network=container:protonwire" # Looks like librus blocks popular VPNs xdddd
     ];
    
-    environmentFiles = ["/run/keys/elixirus.env.secret" "/run/keys/service-account.env"];
+    environmentFiles = ["/run/keys/elixirus.env.secret"];
   };
 
 # virtualisation.oci-containers.containers.protonwire = {
